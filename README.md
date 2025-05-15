@@ -63,5 +63,5 @@ root@pve-frr1:~/clustershutdown# Connection to pve-frr1 closed by remote host.
 Connection to pve-frr1 closed.
 ```
 
-Keep in mind that this is a loaded gun. Issuing "proxmox_shutdown shutdown" will just kill all your workload and shutdown everything. If you hadn't planned this, you might have a bad day.
+Keep in mind that this is a loaded gun. Issuing "proxmox_shutdown shutdown" will just kill all your workload and shutdown everything. If you haven't planned this, you might have a bad day.
 
