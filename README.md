@@ -42,7 +42,7 @@ Clustershutdown is a script that is supposed to shutdown a complete cluster in a
 
 Install it on one Node that has the UPS Agent, and integrate it accordingly.
 
-You can define so called shutdown-groups that help you shutting down vms in the correct order. To Configure this, add a tags to the VMs called shutodown0, shutdown1 and so on.
+You can define so called shutdown-groups that help you shutting down vms in the correct order. To Configure this, add a tags to the VMs called shutdown0, shutdown1 and so on.
 
 The script will first shutdown all vms in shutdown groups, first shutdown0, then shutdown1 and so on. After that all VMs which are not part of a shutdowngroup are being shutdown. After that all Hosts which are not the issueing one are shut down and finally the Host running the script.
 
