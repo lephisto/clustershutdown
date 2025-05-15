@@ -8,7 +8,9 @@ Why? Sure, on Proxmox you can just issue a `poweroff` command, and Proxmox will 
 
 Some Notes:
 
-You want to install `locales-all` to get rid of the locales error.
+You want to install `locales-all` on all nodes to get rid of the locales error.
+
+You want to doublecheck of you can passwordless ssh to every node in the Cluster.
 
 Check your shutdown times - test everything. Make sure your VMs don't hang on shutdown.
 Check that the QEMU-Guest-Agent is running properly.
