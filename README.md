@@ -4,8 +4,14 @@
 
 Safe Shutdown Script for Proxmox VE for use with UPS Software
 
-Why? Sure, on Proxmox you can just issue a `poweroff` command, and Proxmox will shutdown all VMs for you. But if you use Ceph you might be screwed, because not all VMs might be shutdown when some nodes have already gone offline. So I put together this script, that shuts down all VMs first (optionally in a specific order) before shutting down the Hardware.
+Why? Sure, on Proxmox you can just issue a `poweroff` command, and Proxmox will shutdown all VMs for you. But if you use Ceph you might be screwed, because not all VMs might be shutdown when some nodes have already gone offline. So I put together this script, that shuts down all VMs first and wait for each shutdown to complete (optionally in a specific order) before shutting down the Hardware.
 
+Some Notes:
+
+You want to install `locales-all` to get rid of the locales error.
+
+Check your shutdown times - test everything. Make sure your VMs don't hang on shutdown.
+Check that the QEMU-Guest-Agent is running properly.
 
 ```text
 
